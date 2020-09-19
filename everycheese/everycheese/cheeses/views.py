@@ -8,4 +8,6 @@ class CheeseListView(ListView):
 
 class CheeseDetailView(DetailView):
     model = Cheese
-    fields=['name','description','firmness']
+    
+    fields=['name','description','firmness',"country_of_origin"]
+
