@@ -19,5 +19,5 @@
 {% if cheese.creator.name %}
     <p>{{ cheese.creator.name }}</p>
 {% endif %}
-
+<p><a class="btn btn-primary" role='button' href={% url 'cheeses:update' cheese.slug %}>Update</a></p>
 {% endblock content %}
