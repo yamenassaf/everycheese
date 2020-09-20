@@ -11,9 +11,9 @@ class CheeseListView(ListView):
 class CheeseDetailView(DetailView):
     model = Cheese
     
-    fields=['name','description','firmness',"country_of_origin"]
+    fields=['name','description','firmness',"country_of_origin",'creator']
 
 class CheeseCreateView(LoginRequiredMixin,CreateView):
     model = Cheese
-    fields = ['name','description','firmness','country_of_origin']
+    fields = ['name','description','firmness','country_of_origin','creator']
 
